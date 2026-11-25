@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Books | Chapter One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">chapterone.</div>
+
+        <nav>
+            <a href="admin.html">Dashboard</a>
+            <a href="index.html">Visit Store</a>
+        </nav>
+    </header>
+
+    <main class="manage-books-page">
+
+        <div class="manage-books-heading">
+            <div>
+                <h1>Manage Books</h1>
+                <p>View, edit and manage your bookstore collection.</p>
+            </div>
+
+            <a href="add-book.html" class="add-book-submit">
+                + Add New Book
+            </a>
+        </div>
+
+        <div class="manage-books-container">
+
+            <div class="manage-books-toolbar">
+                <input
+                    type="text"
+                    id="bookSearch"
+                    placeholder="Search by book title or author..."
+                >
+
+                <select id="categoryFilter">
+                    <option value="">All Genres</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Mystery & Thriller">Mystery & Thriller</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Self-Help">Self-Help</option>
+                    <option value="Science & Technology">Science & Technology</option>
+                    <option value="Biography">Biography</option>
+                    <option value="Children's Books">Children's Books</option>
+                </select>
+            </div>
+
+            <div id="manageBooksMessage"></div>
+
+            <div class="manage-books-table-wrapper">
+                <table class="manage-books-table">
+                    <thead>
+                        <tr>
+                            <th>Book</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="manageBooksList">
+                        <tr>
+                            <td colspan="6">Loading books...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <a href="admin.html" class="back-dashboard">
+            ← Back to Dashboard
+        </a>
+
+    </main>
+
+    <script src="manage-books.js"></script>
+
+</body>
+</html>

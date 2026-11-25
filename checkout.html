@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Chapter One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            chapter<span>one.</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="index.html#bestsellers">Bestsellers</a>
+            <a href="index.html#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="index.html" class="cart">← Back to Store</a>
+        </div>
+    </header>
+
+    <main class="checkout-page">
+
+        <p class="section-label">ALMOST YOURS</p>
+        <h1>Checkout</h1>
+
+        <div class="checkout-layout">
+
+            <!-- DELIVERY DETAILS -->
+            <section class="checkout-form-section">
+
+                <h2>Delivery Details</h2>
+
+                <form id="checkoutForm">
+
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" required>
+
+                    <label for="customerEmail">Email Address</label>
+                    <input type="email" id="customerEmail" required>
+
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone"
+                           pattern="[0-9]{10}" maxlength="10" required>
+
+                    <label for="customerAddress">Delivery Address</label>
+                    <textarea id="customerAddress" rows="4"
+                              required></textarea>
+
+                    <label for="customerCity">City</label>
+                    <input type="text" id="customerCity" required>
+
+                    <label for="customerPincode">PIN Code</label>
+                    <input type="text" id="customerPincode"
+                           pattern="[0-9]{6}" maxlength="6" required>
+
+                    <button type="submit" class="place-order-btn">
+                        Place Order
+                    </button>
+
+                    <p id="checkoutMessage"></p>
+
+                </form>
+
+            </section>
+
+            <!-- ORDER SUMMARY -->
+            <section class="checkout-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkoutItems">
+                    Loading cart...
+                </div>
+
+                <div class="checkout-total">
+                    <span>Total Amount</span>
+                    <strong id="checkoutTotal">₹0.00</strong>
+                </div>
+
+                <p class="demo-payment-note">
+                    Demo checkout — no real payment will be processed.
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <h2>chapterone.</h2>
+        <p>Every book opens a new world.</p>
+        <p>© 2026 Chapter One. All rights reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+
+</body>
+</html>

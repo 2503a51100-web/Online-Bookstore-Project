@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Chapter One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            chapter<span>one.</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Visit Store</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="adminLogout" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <main class="admin-page">
+
+        <p class="section-label">CHAPTER ONE MANAGEMENT</p>
+
+        <h1>Admin Dashboard</h1>
+
+        <p class="admin-welcome">
+            Welcome to your bookstore management panel.
+        </p>
+
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+                <h3>Total Books</h3>
+                <p id="totalBooks">0</p>
+            </div>
+
+            <div class="admin-stat-card">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">0</p>
+            </div>
+
+            <div class="admin-stat-card">
+                <h3>Management</h3>
+                <p>Active</p>
+            </div>
+
+        </section>
+
+        <!-- SUPER ADMIN MANAGEMENT -->
+        <section
+            id="superAdminSection"
+            class="admin-actions"
+            style="display: none;"
+        >
+
+            <h2>Super Admin Management</h2>
+
+            <div class="admin-action-grid">
+
+                <a href="manage-admins.html" class="admin-action-card">
+                    <span>👥</span>
+                    <h3>Manage Admins</h3>
+                    <p>Create and manage bookstore administrator accounts.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- BOOK MANAGEMENT -->
+        <section class="admin-actions">
+
+            <h2>Book Management</h2>
+
+            <div class="admin-action-grid">
+
+                <a href="add-book.html" class="admin-action-card">
+                    <span>＋</span>
+                    <h3>Add New Book</h3>
+                    <p>Add books to your bookstore collection.</p>
+                </a>
+
+                <a href="manage-books.html" class="admin-action-card">
+                    <span>📚</span>
+                    <h3>Manage Books</h3>
+                    <p>View, edit and delete existing books.</p>
+                </a>
+
+                <a href="manage-orders.html" class="admin-action-card">
+                    <span>📦</span>
+                    <h3>Manage Orders</h3>
+                    <p>View customer orders and their status.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>chapterone.</h2>
+        <p>Every book opens a new world.</p>
+        <p>© 2026 Chapter One. All rights reserved.</p>
+    </footer>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>

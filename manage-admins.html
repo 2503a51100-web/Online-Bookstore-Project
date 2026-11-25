@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Admins | Chapter One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            chapter<span>one.</span>
+        </a>
+
+        <nav>
+            <a href="admin.html">Dashboard</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="adminLogout" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <main class="admin-page">
+
+        <p class="section-label">CHAPTER ONE MANAGEMENT</p>
+
+        <h1>Manage Admins</h1>
+
+        <p class="admin-welcome">
+            Create and manage your bookstore administrators.
+        </p>
+
+        <!-- CREATE ADMIN -->
+        <section class="admin-actions">
+
+            <h2>Create New Admin</h2>
+
+            <form id="createAdminForm" class="auth-form">
+
+                <label for="adminName">Full Name</label>
+                <input
+                    type="text"
+                    id="adminName"
+                    placeholder="Enter admin name"
+                    required
+                >
+
+                <label for="adminEmail">Email Address</label>
+                <input
+                    type="email"
+                    id="adminEmail"
+                    placeholder="Enter admin email"
+                    required
+                >
+
+                <label for="adminPassword">Password</label>
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Minimum 8 characters"
+                    minlength="8"
+                    required
+                >
+
+                <button type="submit" class="primary-btn">
+                    Create Admin Account
+                </button>
+
+                <p id="adminMessage"></p>
+
+            </form>
+
+        </section>
+
+        <!-- EXISTING ADMINS -->
+        <section class="admin-actions">
+
+            <h2>Existing Admins</h2>
+
+            <div id="adminsList">
+                <p>Loading Admin accounts...</p>
+            </div>
+
+        </section>
+
+        <a href="admin.html" class="back-link">
+            ← Back to Dashboard
+        </a>
+
+    </main>
+
+    <footer>
+        <h2>chapterone.</h2>
+        <p>Every book opens a new world.</p>
+        <p>© 2026 Chapter One. All rights reserved.</p>
+    </footer>
+
+    <script src="manage-admins.js"></script>
+
+</body>
+</html>

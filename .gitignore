@@ -1,0 +1,27 @@
+
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local database backups
+data/
+dump/
+*.bson
+*.metadata.json
+
+# System files
+.DS_Store
+Thumbs.db
+.vscode/

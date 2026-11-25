@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chapter One | Online Book Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            chapter<span>one.</span>
+        </a>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#bestsellers">Bestsellers</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <input
+                type="text"
+                placeholder="Search books..."
+                id="searchInput"
+                aria-label="Search books"
+            >
+
+           <a href="#" class="cart" id="cartLink">🛒 Cart</a>
+
+            <!-- ACCOUNT AREA -->
+            <div id="accountArea">
+                <a href="login.html" class="account-link">Login</a>
+                <a href="register.html" class="account-link signup-btn">Create Account</a>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                YOUR NEXT CHAPTER STARTS HERE
+            </p>
+
+            <h1>
+                Discover Stories<br>
+                That Stay With <em>You.</em>
+            </h1>
+
+            <p class="hero-description">
+                Explore a world of imagination, knowledge and inspiration.
+                Find your next favourite book with us.
+            </p>
+
+            <a href="#bestsellers" class="shop-button">
+                Explore Collection →
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800"
+                alt="A beautiful collection of books"
+            >
+
+        </div>
+
+    </section>
+
+
+    
+<!-- CATEGORIES SECTION -->
+<section class="categories" id="categories">
+
+    <p class="section-label">
+        EXPLORE OUR COLLECTION
+    </p>
+
+    <h2>Browse by Category</h2>
+
+    <div class="category-list">
+        <a href="#bestsellers" class="category-card" data-category="">
+        📚 All Genres
+        </a>
+        
+        <a href="#bestsellers" class="category-card" data-category="Fiction">
+            📖 Fiction
+        </a>
+
+        <a href="#bestsellers" class="category-card" data-category="Romance">
+            💗 Romance
+        </a>
+
+        <a href="#bestsellers" class="category-card" data-category="Mystery & Thriller">
+            🔍 Mystery & Thriller
+        </a>
+
+        <a href="#bestsellers" class="category-card" data-category="Fantasy">
+            🪄 Fantasy
+        </a>
+
+        <a href="#bestsellers" class="category-card" data-category="Self-Help">
+            🧠 Self-Help
+        </a>
+
+        <a href="#bestsellers" class="category-card" data-category="Science & Technology">
+            💻 Science & Technology
+        </a>
+
+        <a href="#bestsellers" class="category-card" data-category="Biography">
+            🎓 Biography
+        </a>
+
+        <a href="#bestsellers" class="category-card" data-category="Children's Books">
+            🧸 Children's Books
+        </a>
+
+    </div>
+
+</section>
+
+
+
+    <!-- BESTSELLERS SECTION -->
+    <section class="bestsellers" id="bestsellers">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label">
+                    HANDPICKED FOR YOU
+                </p>
+
+                <h2>Our Bestsellers</h2>
+            </div>
+
+            <a href="#bestsellers">
+                View All →
+            </a>
+
+        </div>
+
+        <!-- BOOKS WILL BE LOADED FROM MONGODB -->
+        <div class="book-grid" id="bookGrid" aria-live="polite">
+
+            <p id="booksMessage">
+                Loading books...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="about">
+
+        <h2>chapterone.</h2>
+
+        <p>
+            Every book opens a new world.
+        </p>
+
+        <p>
+            © 2026 Chapter One. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+</html>

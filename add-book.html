@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Book | Chapter One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            chapter<span>one.</span>
+        </a>
+
+        <nav>
+            <a href="admin.html">Dashboard</a>
+            <a href="index.html">Visit Store</a>
+        </nav>
+    </header>
+
+    <main class="add-book-page">
+
+        <div class="add-book-heading">
+            <p class="section-label">CHAPTER ONE MANAGEMENT</p>
+            <h1>Add a New Book</h1>
+            <p>Add a book to your bookstore collection.</p>
+        </div>
+
+        <form id="addBookForm" class="add-book-form">
+
+            <div class="form-group">
+                <label for="title">Book Title *</label>
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter book title"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author Name *</label>
+                <input
+                    type="text"
+                    id="author"
+                    placeholder="Enter author name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price (₹) *</label>
+                <input
+                    type="number"
+                    id="price"
+                    min="1"
+                    step="0.01"
+                    placeholder="Enter book price"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="category">Book Genre *</label>
+                <select id="category" required>
+                    <option value="">Select a genre</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Mystery & Thriller">Mystery & Thriller</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Self-Help">Self-Help</option>
+                    <option value="Science & Technology">Science & Technology</option>
+                    <option value="Biography">Biography</option>
+                    <option value="Children's Books">Children's Books</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="stock">Available Stock *</label>
+                <input
+                    type="number"
+                    id="stock"
+                    min="0"
+                    step="1"
+                    placeholder="Enter available quantity"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="image">Book Cover Image URL *</label>
+                <input
+                    type="url"
+                    id="image"
+                    placeholder="Paste book cover image URL"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="description">Book Description *</label>
+                <textarea
+                    id="description"
+                    rows="5"
+                    placeholder="Write a short description of the book"
+                    required
+                ></textarea>
+            </div>
+
+            <p id="addBookMessage"></p>
+
+            <button type="submit" class="add-book-submit">
+                Add Book to Store
+            </button>
+
+            <a href="admin.html" class="back-dashboard">
+                ← Back to Dashboard
+            </a>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <h2>chapterone.</h2>
+        <p>Every book opens a new world.</p>
+        <p>© 2026 Chapter One. All rights reserved.</p>
+    </footer>
+    
+<script src="add-book.js"></script>
+
+</body>
+</html>
