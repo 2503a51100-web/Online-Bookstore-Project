@@ -1,5 +1,5 @@
 
-const BOOK_API_URL = "http://localhost:5000/api/books";
+const BOOK_API_URL = "https://online-bookstore-project-a950.onrender.com/api/books";
 
 // Check admin login
 const token = localStorage.getItem("chapterOneToken");
@@ -14,8 +14,7 @@ if (!token || !savedUser) {
     if (!["admin", "superadmin"].includes(user.role)) {
         alert("Access denied. Admin privileges required.");
         window.location.href = "index.html";
-    }
-    
+}
     } catch (error) {
         localStorage.removeItem("chapterOneToken");
         localStorage.removeItem("chapterOneUser");

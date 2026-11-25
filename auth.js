@@ -1,5 +1,5 @@
 
-const USER_API_URL = "http://localhost:5000/api/users";
+const USER_API_URL = "https://online-bookstore-project-a950.onrender.com/api/users";
 
 // CHECK ADMIN ROLES
 function isAdminRole(role) {

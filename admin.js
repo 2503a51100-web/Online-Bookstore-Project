@@ -1,5 +1,5 @@
 
-const ADMIN_API_URL = "http://localhost:5000/api";
+const ADMIN_API_URL = "https://online-bookstore-project-a950.onrender.com/api";
 
 // GET LOGIN DETAILS
 const token = localStorage.getItem("chapterOneToken");

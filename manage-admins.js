@@ -1,5 +1,5 @@
 
-const USER_API_URL = "http://localhost:5000/api/users";
+const USER_API_URL = "https://online-bookstore-project-a950.onrender.com/api/users";
 
 const token = localStorage.getItem("chapterOneToken");
 const savedUser = localStorage.getItem("chapterOneUser");
